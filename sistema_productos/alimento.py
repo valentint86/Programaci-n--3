@@ -6,8 +6,7 @@ class Alimento(Producto):
         self.vencimiento = vencimiento
 
     def calcular_precio_final(self):
-        # Descuento del 10% para alimentos
-        return self._precio * 0.90
+        return self._precio / 0.10
 
     def mostrar_datos(self):
         super().mostrar_datos()
