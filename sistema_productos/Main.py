@@ -4,8 +4,6 @@ from electronico import Electronico
 from ropa import Ropa
 
 def main():
-    print("--- CREACIÓN DE OBJETOS Y LISTA ---")
-    # Instanciación de objetos pedidos y prendas adicionales de Ropa
     leche = Alimento("Leche", 2000, 50, "15/11/2026")
     notebook = Electronico("Notebook", 800000, 10, 12)
     cuaderno = Producto("Cuaderno", 5000, 30) # Producto genérico
@@ -13,20 +11,14 @@ def main():
     remera = Ropa("Remera Básica", 15000, 20, "M", "Remera")
     pantalon = Ropa("Pantalón Jean", 45000, 15, "42", "Pantalón")
 
-    # Guardar todos en una sola lista
     inventario = [leche, notebook, cuaderno, remera, pantalon]
 
-    print("\n--- PRUEBAS DE VENTAS Y REPOSICIONES ---")
-    # Venta válida
     leche.vender(10)
     
-    # Venta con stock insuficiente
     notebook.vender(15)
-    
-    # Reposición
+   
     notebook.reponer(5)
 
-    print("\n--- RECORRIDO DEL INVENTARIO Y POLIMORFISMO ---")
     valor_total_inventario = 0
     producto_mas_caro = inventario[0]
     max_precio_final = inventario[0].calcular_precio_final()
