@@ -6,8 +6,7 @@ from ropa import Ropa
 def main():
     leche = Alimento("Leche", 2000, 50, "15/11/2026")
     notebook = Electronico("Notebook", 800000, 10, 12)
-    cuaderno = Producto("Cuaderno", 5000, 30) # Producto genérico
-    
+    cuaderno = Producto("Cuaderno", 5000, 30)
     remera = Ropa("Remera Básica", 15000, 20, "M", "Remera")
     pantalon = Ropa("Pantalón Jean", 45000, 15, "42", "Pantalón")
 
